@@ -17,9 +17,9 @@
     --success: #1a7a4a;
     --border: #ddd4c0;
   }
- 
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--navy);
@@ -31,7 +31,7 @@
     position: relative;
     overflow-x: hidden;
   }
- 
+
   /* Background texture */
   body::before {
     content: '';
@@ -42,7 +42,7 @@
       radial-gradient(ellipse at 80% 20%, rgba(200,148,26,0.05) 0%, transparent 50%);
     pointer-events: none;
   }
- 
+
   /* Decorative corner marks */
   body::after {
     content: '';
@@ -51,7 +51,7 @@
     height: 3px;
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
   }
- 
+
   .card {
     background: var(--cream);
     border-radius: 2px;
@@ -61,19 +61,19 @@
     overflow: hidden;
     box-shadow: 0 32px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(200,148,26,0.2);
   }
- 
+
   .card-top-bar {
     height: 4px;
     background: linear-gradient(90deg, var(--navy), var(--gold), var(--navy));
   }
- 
+
   .card-header {
     background: var(--navy);
     padding: 32px 40px 28px;
     text-align: center;
     position: relative;
   }
- 
+
   .ims-logo-wrap {
     margin-bottom: 16px;
     display: flex;
@@ -95,7 +95,7 @@
     margin-bottom: 16px;
     opacity: 0.9;
   }
- 
+
   .card-header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 26px;
@@ -104,18 +104,18 @@
     line-height: 1.25;
     margin-bottom: 6px;
   }
- 
+
   .card-header h1 span {
     color: var(--gold-light);
   }
- 
+
   .card-header .subtitle {
     font-size: 13px;
     color: rgba(255,255,255,0.55);
     font-weight: 400;
     letter-spacing: 0.5px;
   }
- 
+
   /* Decorative divider */
   .header-divider {
     display: flex;
@@ -135,15 +135,15 @@
     transform: rotate(45deg);
     flex-shrink: 0;
   }
- 
+
   .card-body {
     padding: 32px 40px 36px;
   }
- 
+
   .field-group {
     margin-bottom: 22px;
   }
- 
+
   label {
     display: block;
     font-size: 11px;
@@ -153,7 +153,7 @@
     text-transform: uppercase;
     margin-bottom: 8px;
   }
- 
+
   select {
     width: 100%;
     padding: 13px 40px 13px 16px;
@@ -173,12 +173,12 @@
     background-repeat: no-repeat;
     background-position: right 14px center;
   }
- 
+
   select:focus {
     border-color: var(--navy);
     box-shadow: 0 0 0 3px rgba(31,56,100,0.08);
   }
- 
+
   select:disabled {
     background-color: #f4f2ee;
     color: #aaa;
@@ -187,14 +187,14 @@
     background-repeat: no-repeat;
     background-position: right 14px center;
   }
- 
+
   .field-hint {
     font-size: 12px;
     color: #888;
     margin-top: 5px;
     font-weight: 400;
   }
- 
+
   .error-msg {
     font-size: 12px;
     color: var(--error);
@@ -202,9 +202,9 @@
     font-weight: 500;
     display: none;
   }
- 
+
   .error-msg.visible { display: block; }
- 
+
   /* Student info preview */
   .student-preview {
     background: #f0f4fb;
@@ -215,14 +215,14 @@
     display: none;
     animation: fadeSlide 0.3s ease;
   }
- 
+
   .student-preview.visible { display: block; }
- 
+
   @keyframes fadeSlide {
     from { opacity: 0; transform: translateY(-6px); }
     to   { opacity: 1; transform: translateY(0); }
   }
- 
+
   .student-preview-label {
     font-size: 10px;
     font-weight: 700;
@@ -232,19 +232,19 @@
     opacity: 0.6;
     margin-bottom: 4px;
   }
- 
+
   .student-preview-name {
     font-size: 17px;
     font-weight: 600;
     color: var(--navy);
   }
- 
+
   .student-preview-batch {
     font-size: 13px;
     color: #666;
     margin-top: 2px;
   }
- 
+
   /* Commitment checkbox */
   .commitment-box {
     border: 1.5px solid var(--border);
@@ -255,16 +255,16 @@
     cursor: pointer;
     transition: border-color 0.2s;
   }
- 
+
   .commitment-box:hover { border-color: var(--navy); }
   .commitment-box.checked { border-color: var(--navy); background: #f0f4fb; }
- 
+
   .commitment-inner {
     display: flex;
     align-items: flex-start;
     gap: 12px;
   }
- 
+
   .custom-checkbox {
     width: 20px; height: 20px;
     border: 2px solid var(--border);
@@ -275,29 +275,29 @@
     transition: all 0.2s;
     background: white;
   }
- 
+
   .commitment-box.checked .custom-checkbox {
     background: var(--navy);
     border-color: var(--navy);
   }
- 
+
   .custom-checkbox svg { display: none; }
   .commitment-box.checked .custom-checkbox svg { display: block; }
- 
+
   #commitment-cb { display: none; }
- 
+
   .commitment-text {
     font-size: 13.5px;
     color: var(--charcoal);
     line-height: 1.55;
     font-weight: 400;
   }
- 
+
   .commitment-text strong {
     color: var(--navy);
     font-weight: 600;
   }
- 
+
   .submit-btn {
     width: 100%;
     padding: 15px;
@@ -315,26 +315,26 @@
     position: relative;
     overflow: hidden;
   }
- 
+
   .submit-btn:hover:not(:disabled) {
     background: #162b50;
     box-shadow: 0 4px 20px rgba(31,56,100,0.3);
   }
- 
+
   .submit-btn:active:not(:disabled) { transform: scale(0.99); }
- 
+
   .submit-btn:disabled {
     opacity: 0.45;
     cursor: not-allowed;
   }
- 
+
   .submit-btn .btn-inner {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
   }
- 
+
   /* Loading spinner */
   .spinner {
     width: 16px; height: 16px;
@@ -344,23 +344,23 @@
     animation: spin 0.7s linear infinite;
     display: none;
   }
- 
+
   @keyframes spin { to { transform: rotate(360deg); } }
- 
+
   /* ── CONFIRMATION SCREEN ── */
   .confirmation {
     display: none;
     padding: 0;
   }
- 
+
   .confirmation.visible { display: block; }
- 
+
   .conf-header {
     background: var(--navy);
     padding: 28px 36px 24px;
     text-align: center;
   }
- 
+
   .conf-check {
     width: 56px; height: 56px;
     background: var(--gold);
@@ -369,12 +369,12 @@
     margin: 0 auto 16px;
     animation: popIn 0.5s cubic-bezier(0.175,0.885,0.32,1.275);
   }
- 
+
   @keyframes popIn {
     from { transform: scale(0); opacity: 0; }
     to   { transform: scale(1); opacity: 1; }
   }
- 
+
   .conf-header h2 {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
@@ -382,16 +382,16 @@
     color: var(--white);
     margin-bottom: 4px;
   }
- 
+
   .conf-header p {
     font-size: 13px;
     color: rgba(255,255,255,0.55);
   }
- 
+
   .conf-body {
     padding: 28px 36px 36px;
   }
- 
+
   .conf-name {
     font-family: 'Playfair Display', serif;
     font-size: 22px;
@@ -399,21 +399,21 @@
     color: var(--navy);
     margin-bottom: 4px;
   }
- 
+
   .conf-batch {
     font-size: 13px;
     color: #777;
     margin-bottom: 24px;
     font-weight: 400;
   }
- 
+
   .event-details-card {
     background: var(--navy);
     border-radius: 2px;
     padding: 22px 24px;
     margin-bottom: 20px;
   }
- 
+
   .event-detail-row {
     display: flex;
     align-items: flex-start;
@@ -421,10 +421,10 @@
     padding: 10px 0;
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
- 
+
   .event-detail-row:last-child { border-bottom: none; padding-bottom: 0; }
   .event-detail-row:first-child { padding-top: 0; }
- 
+
   .detail-icon {
     width: 30px; height: 30px;
     background: rgba(200,148,26,0.15);
@@ -433,9 +433,9 @@
     flex-shrink: 0;
     margin-top: 1px;
   }
- 
+
   .detail-content {}
- 
+
   .detail-label {
     font-size: 10px;
     font-weight: 700;
@@ -444,18 +444,18 @@
     text-transform: uppercase;
     margin-bottom: 3px;
   }
- 
+
   .detail-value {
     font-size: 15px;
     font-weight: 600;
     color: var(--white);
     line-height: 1.3;
   }
- 
+
   .detail-value.highlight {
     color: var(--gold-light);
   }
- 
+
   .conf-note {
     background: rgba(200,148,26,0.08);
     border-left: 3px solid var(--gold);
@@ -466,9 +466,9 @@
     line-height: 1.55;
     font-weight: 400;
   }
- 
+
   .conf-note strong { color: var(--navy); font-weight: 600; }
- 
+
   /* Mobile tweaks */
   @media (max-width: 480px) {
     .card-header { padding: 26px 24px 22px; }
@@ -481,10 +481,10 @@
 </style>
 </head>
 <body>
- 
+
 <div class="card" id="mainCard">
   <div class="card-top-bar"></div>
- 
+
   <!-- Registration Form -->
   <div id="formView">
     <div class="card-header">
@@ -493,7 +493,7 @@
       <p class="subtitle">Saturday, 7th June 2026 &nbsp;·&nbsp; Phenom, Heritage Square</p>
       <div class="header-divider"><div class="header-divider-diamond"></div></div>
     </div>
- 
+
     <div class="card-body">
       <div class="field-group">
         <label for="batchSelect">Your Batch</label>
@@ -508,21 +508,21 @@
           <option value="CAT 2707">CAT 2707</option>
         </select>
       </div>
- 
+
       <div class="field-group">
         <label for="nameSelect">Your Name</label>
         <select id="nameSelect" onchange="onNameChange()" disabled>
           <option value="">— Select your batch first —</option>
         </select>
       </div>
- 
+
       <!-- Auto-detected student preview -->
       <div class="student-preview" id="studentPreview">
         <div class="student-preview-label">Verified</div>
         <div class="student-preview-name" id="previewName">—</div>
         <div class="student-preview-batch" id="previewBatch">—</div>
       </div>
- 
+
       <!-- Commitment -->
       <div class="commitment-box" id="commitmentBox" onclick="toggleCommitment()">
         <div class="commitment-inner">
@@ -537,7 +537,7 @@
           </div>
         </div>
       </div>
- 
+
       <button class="submit-btn" id="submitBtn" onclick="handleSubmit()" disabled>
         <div class="btn-inner">
           <div class="spinner" id="spinner"></div>
@@ -546,7 +546,7 @@
       </button>
     </div>
   </div>
- 
+
   <!-- Confirmation Screen -->
   <div class="confirmation" id="confirmView">
     <div class="conf-header">
@@ -561,7 +561,7 @@
     <div class="conf-body">
       <div class="conf-name" id="confName">—</div>
       <div class="conf-batch" id="confBatch">—</div>
- 
+
       <div class="event-details-card">
         <div class="event-detail-row">
           <div class="detail-icon">
@@ -597,15 +597,15 @@
           </div>
         </div>
       </div>
- 
+
       <div class="conf-note">
         <strong>Important:</strong> Please arrive at least 10 minutes before your slot. Carry your IMS Pin for verification at the venue.
       </div>
     </div>
   </div>
- 
+
 </div>
- 
+
 <script>
 // ── STUDENT DATA (Active students only, batches 2701–2708) ──
 // Format: "IMSPIN": { name: "...", batch: "CAT 2701" }
@@ -620,12 +620,12 @@ const STUDENTS = {
   "STU0001192199": { name: "Divyam Jaiswal", batch: "CAT 2701" },
   "STU0001186619": { name: "Drashti Mandaliya", batch: "CAT 2701" },
   "STU0001211567": { name: "Hancy Shah", batch: "CAT 2701" },
-  "STU0001209716": { name: "Harsh Pawar", batch: "CAT 2701" },
   "STU0001189638": { name: "Kangana Kuntal", batch: "CAT 2701" },
   "STU0001206400": { name: "Kathan Doshi", batch: "CAT 2701" },
   "STU0001212859": { name: "Khushal Jain", batch: "CAT 2701" },
   "STU0001217378": { name: "Kuldeep Chavda", batch: "CAT 2701" },
   "STU0001214170": { name: "Madhav Porwal", batch: "CAT 2701" },
+  "STU0001209779": { name: "Manav Gangdev", batch: "CAT 2701" },
   "STU0001216736": { name: "Mannat Desai", batch: "CAT 2701" },
   "STU0001198483": { name: "Margi Doriya", batch: "CAT 2701" },
   "STU0001215430": { name: "Mayank Kajani", batch: "CAT 2701" },
@@ -645,15 +645,14 @@ const STUDENTS = {
   "STU0001187915": { name: "Vansh Galani", batch: "CAT 2701" },
   "STU0001217482": { name: "Vanshika Kamdar", batch: "CAT 2701" },
   "STU0001192301": { name: "Vinayak Vegda", batch: "CAT 2701" },
-  "STU0001209779": { name: "Manav Gangdev", batch: "CAT 2701" },
-  // CAT 2702
-  "STU0001230675": { name: "Arshiya Sareshwala", batch: "CAT 2702" },
-  "STU0001229167": { name: "Fazal Naqvi", batch: "CAT 2702" },
-  "STU0001183882": { name: "Jeet Bhimani", batch: "CAT 2702" },
   "STU0001202985": { name: "Aliraza Kapasi", batch: "CAT 2702" },
+  "STU0001230675": { name: "Arshiya Sareshwala", batch: "CAT 2702" },
   "STU0001222225": { name: "Bhavin Raiyani", batch: "CAT 2702" },
+  "STU0001229167": { name: "Fazal Naqvi", batch: "CAT 2702" },
+  "STU0001209716": { name: "Harsh Pawar", batch: "CAT 2702" },
   "STU0001218537": { name: "Harsh Thadani", batch: "CAT 2702" },
   "STU0001195735": { name: "Het Malani", batch: "CAT 2702" },
+  "STU0001183882": { name: "Jeet Bhimani", batch: "CAT 2702" },
   "STU0001212480": { name: "Juhi Bhatt", batch: "CAT 2702" },
   "STU0001214019": { name: "Krishna Ramani", batch: "CAT 2702" },
   "STU0001185783": { name: "Kwina Thakkar", batch: "CAT 2702" },
@@ -667,126 +666,152 @@ const STUDENTS = {
   "STU0001221625": { name: "Saumya Pandya", batch: "CAT 2702" },
   "STU0001223136": { name: "Shaan Patel", batch: "CAT 2702" },
   "STU0001217869": { name: "Vansh Hardev", batch: "CAT 2702" },
-  "STU0001231191": { name: "Vedanshi Vyas", batch: "CAT 2702" },
   "STU0001220416": { name: "Vatsalya Singh", batch: "CAT 2702" },
-  // CAT 2703
-  "STU0001225206": { name: "Himanshi Mirchandani", batch: "CAT 2703" },
-  "STU0001215156": { name: "Roshan Batheja", batch: "CAT 2703" },
-  "STU0001227129": { name: "Omi Lathiya", batch: "CAT 2703" },
-  "STU0001231592": { name: "Henil Shah", batch: "CAT 2703" },
-  "STU0001232215": { name: "Jagrut Thummar", batch: "CAT 2703" },
-  "STU0001217279": { name: "Milind Nagpara", batch: "CAT 2703" },
+  "STU0001231191": { name: "Vedanshi Vyas", batch: "CAT 2702" },
   "STU0001220427": { name: "Abhishek Panchal", batch: "CAT 2703" },
   "STU0001211280": { name: "Aniket Hadiya", batch: "CAT 2703" },
   "STU0001220591": { name: "Atharv Kherodia", batch: "CAT 2703" },
   "STU0001230777": { name: "Charmi Parekh", batch: "CAT 2703" },
   "STU0001192461": { name: "Devarsh Patel", batch: "CAT 2703" },
-  "STU0001233513": { name: "Rena Vaghasiya", batch: "CAT 2703" },
   "STU0001173822": { name: "Harsh Vadecha", batch: "CAT 2703" },
+  "STU0001231592": { name: "Henil Shah", batch: "CAT 2703" },
+  "STU0001225206": { name: "Himanshi Mirchandani", batch: "CAT 2703" },
+  "STU0001232215": { name: "Jagrut Thummar", batch: "CAT 2703" },
   "STU0001199925": { name: "Jugal Patel", batch: "CAT 2703" },
   "STU0001188403": { name: "Kalgi Prajapati", batch: "CAT 2703" },
   "STU0001224304": { name: "Khushi Aghera", batch: "CAT 2703" },
+  "STU0001210940": { name: "Khushi Patel", batch: "CAT 2703" },
   "STU0001220465": { name: "Kinjal Gandhi", batch: "CAT 2703" },
   "STU0001190336": { name: "Kunj Patel", batch: "CAT 2703" },
+  "STU0001217279": { name: "Milind Nagpara", batch: "CAT 2703" },
+  "STU0001227129": { name: "Omi Lathiya", batch: "CAT 2703" },
   "STU0001227528": { name: "Parth Parmar", batch: "CAT 2703" },
   "STU0001231341": { name: "Prachi Dhulera", batch: "CAT 2703" },
+  "STU0001227415": { name: "Prutha Patel", batch: "CAT 2703" },
   "STU0001230083": { name: "Purva Dhrangu", batch: "CAT 2703" },
   "IMS0001137946": { name: "Purva Patel", batch: "CAT 2703" },
   "STU0001220414": { name: "Raina Desai", batch: "CAT 2703" },
+  "STU0001233513": { name: "Rena Vaghasiya", batch: "CAT 2703" },
   "STU0001206550": { name: "Riya Shah", batch: "CAT 2703" },
-  "STU0001223017": { name: "Vallabh Maheshwari", batch: "CAT 2703" },
+  "STU0001215156": { name: "Roshan Batheja", batch: "CAT 2703" },
   "STU0001220088": { name: "Sandeep Modhvadiya", batch: "CAT 2703" },
   "STU0001186595": { name: "Saumya Patel", batch: "CAT 2703" },
   "STU0001196677": { name: "Shubham Singh", batch: "CAT 2703" },
   "STU0001229642": { name: "Smit Thakkar", batch: "CAT 2703" },
+  "STU0001223017": { name: "Vallabh Maheshwari", batch: "CAT 2703" },
   "STU0001211282": { name: "Vandan Kakadiya", batch: "CAT 2703" },
-  "STU0001210940": { name: "Khushi Patel", batch: "CAT 2703" },
-  "STU0001227415": { name: "Prutha Patel", batch: "CAT 2703" },
-  // CAT 2704
   "STU0001248913": { name: "Aryan Patel", batch: "CAT 2704" },
-  "STU0001197044": { name: "Manav Patel", batch: "CAT 2704" },
-  "STU0001233119": { name: "Durvish Chawla", batch: "CAT 2704" },
-  "STU0001235510": { name: "Harshika Lakhwani", batch: "CAT 2704" },
-  "STU0001226011": { name: "Meet Shah", batch: "CAT 2704" },
-  "STU0001212225": { name: "Nikunj Sharma", batch: "CAT 2704" },
-  "STU0001237846": { name: "Shubham Patel", batch: "CAT 2704" },
-  "STU0001237529": { name: "Ved Shukla", batch: "CAT 2704" },
-  "STU0001238307": { name: "Heriom Jadeja", batch: "CAT 2704" },
-  "STU0001233415": { name: "Margi Patel", batch: "CAT 2704" },
-  "STU0001235880": { name: "Niyati Lalwani", batch: "CAT 2704" },
-  "IMS0001146575": { name: "Renish Goijiya", batch: "CAT 2704" },
   "STU0001240128": { name: "Dev Sharma", batch: "CAT 2704" },
   "STU0001243379": { name: "Dhruv Kacha", batch: "CAT 2704" },
+  "STU0001255112": { name: "Dhruv Motwani", batch: "CAT 2704" },
+  "STU0001233119": { name: "Durvish Chawla", batch: "CAT 2704" },
+  "STU0001175434": { name: "Fenil Patel", batch: "CAT 2704" },
+  "STU0001250462": { name: "Gopal Donda", batch: "CAT 2704" },
+  "STU0001235510": { name: "Harshika Lakhwani", batch: "CAT 2704" },
+  "STU0001238307": { name: "Heriom Jadeja", batch: "CAT 2704" },
   "STU0001244071": { name: "Madhav Aggarwal", batch: "CAT 2704" },
+  "STU0001197044": { name: "Manav Patel", batch: "CAT 2704" },
+  "STU0001233415": { name: "Margi Patel", batch: "CAT 2704" },
+  "STU0001226011": { name: "Meet Shah", batch: "CAT 2704" },
+  "STU0001212225": { name: "Nikunj Sharma", batch: "CAT 2704" },
   "STU0001239572": { name: "Nirjara Mistri", batch: "CAT 2704" },
-  "STU0001244471": { name: "Prutha Patel", batch: "CAT 2704" },
+  "STU0001235880": { name: "Niyati Lalwani", batch: "CAT 2704" },
   "STU0001245409": { name: "Preya Chaudhary", batch: "CAT 2704" },
-  "STU0001242340": { name: "Srushti Patel", batch: "CAT 2704" },
-  "STU0001231270": { name: "Sneha Purohit", batch: "CAT 2704" },
   "STU0001248914": { name: "Prince Patel", batch: "CAT 2704" },
+  "STU0001244471": { name: "Prutha Patel", batch: "CAT 2704" },
+  "IMS0001146575": { name: "Renish Goijiya", batch: "CAT 2704" },
   "STU0001239226": { name: "Shubham Karia", batch: "CAT 2704" },
-  // CAT 2705
+  "STU0001237846": { name: "Shubham Patel", batch: "CAT 2704" },
+  "STU0001245257": { name: "Smit Patel", batch: "CAT 2704" },
+  "STU0001231270": { name: "Sneha Purohit", batch: "CAT 2704" },
+  "STU0001242340": { name: "Srushti Patel", batch: "CAT 2704" },
+  "STU0001251106": { name: "Tarun Prajapati", batch: "CAT 2704" },
+  "STU0001237628": { name: "Urvi Sadrani", batch: "CAT 2704" },
+  "STU0001237529": { name: "Ved Shukla", batch: "CAT 2704" },
+  "STU0001247863": { name: "Aastha Patel", batch: "CAT 2705" },
   "STU0001218361": { name: "Aditya Sonawane", batch: "CAT 2705" },
-  "STU0001196123": { name: "Aum Chag", batch: "CAT 2705" },
-  "STU0001183538": { name: "Bhavya Vadecha", batch: "CAT 2705" },
-  "STU0001235053": { name: "Devanshi Marfatiya", batch: "CAT 2705" },
-  "STU0001235613": { name: "Dhruv Shah N", batch: "CAT 2705" },
-  "STU0001193126": { name: "Dhruv Shah", batch: "CAT 2705" },
-  "STU0001232214": { name: "Dhruv Solanki", batch: "CAT 2705" },
-  "STU0001173901": { name: "Kavya Parikh", batch: "CAT 2705" },
-  "STU0001235746": { name: "Khushi Bhoraniya", batch: "CAT 2705" },
-  "STU0001218106": { name: "Bhavik Limbachiya", batch: "CAT 2705" },
-  "IMS0001152927": { name: "Priyanshi Dave", batch: "CAT 2705" },
-  "STU0001232213": { name: "Kartavya Solanki", batch: "CAT 2705" },
-  "STU0001237954": { name: "Mayank Vaghela", batch: "CAT 2705" },
-  "STU0001190156": { name: "Safwan Vahora", batch: "CAT 2705" },
   "IMS0001148819": { name: "Anushka Pillai", batch: "CAT 2705" },
+  "STU0001196123": { name: "Aum Chag", batch: "CAT 2705" },
+  "STU0001218106": { name: "Bhavik Limbachiya", batch: "CAT 2705" },
+  "STU0001183538": { name: "Bhavya Vadecha", batch: "CAT 2705" },
   "STU0001242310": { name: "Daksh Mulsha", batch: "CAT 2705" },
+  "STU0001235053": { name: "Devanshi Marfatiya", batch: "CAT 2705" },
+  "STU0001193126": { name: "Dhruv Shah", batch: "CAT 2705" },
+  "STU0001235613": { name: "Dhruv Shah N", batch: "CAT 2705" },
+  "STU0001232214": { name: "Dhruv Solanki", batch: "CAT 2705" },
   "IMS0001109925": { name: "Dhruvi Thanki", batch: "CAT 2705" },
+  "STU0001246659": { name: "Diya Detroja", batch: "CAT 2705" },
   "STU0001243639": { name: "Haril Jain", batch: "CAT 2705" },
   "STU0001244377": { name: "Harsh Kumhar", batch: "CAT 2705" },
   "STU0001240857": { name: "Harshit Jain", batch: "CAT 2705" },
+  "STU0001232213": { name: "Kartavya Solanki", batch: "CAT 2705" },
+  "STU0001173901": { name: "Kavya Parikh", batch: "CAT 2705" },
+  "STU0001242598": { name: "Kevin Patel", batch: "CAT 2705" },
+  "STU0001235746": { name: "Khushi Bhoraniya", batch: "CAT 2705" },
   "STU0001199842": { name: "Khushi Trivedi", batch: "CAT 2705" },
+  "STU0001246646": { name: "Mahi Patel", batch: "CAT 2705" },
+  "STU0001244083": { name: "Mann Chandarana", batch: "CAT 2705" },
+  "STU0001237954": { name: "Mayank Vaghela", batch: "CAT 2705" },
+  "STU0001246291": { name: "Meet Prajapati", batch: "CAT 2705" },
+  "STU0001251033": { name: "Pallav Bhura", batch: "CAT 2705" },
+  "IMS0001152927": { name: "Priyanshi Dave", batch: "CAT 2705" },
   "STU0001242312": { name: "Raj Ranpariya", batch: "CAT 2705" },
   "STU0001242311": { name: "Rutvik Radadiya", batch: "CAT 2705" },
+  "STU0001190156": { name: "Safwan Vahora", batch: "CAT 2705" },
   "STU0001242990": { name: "Satyam Pathak", batch: "CAT 2705" },
-  "STU0001244083": { name: "Mann Chandarana", batch: "CAT 2705" },
   "STU0001237176": { name: "Vandan Surani", batch: "CAT 2705" },
-  "STU0001247863": { name: "Aastha Patel", batch: "CAT 2705" },
-  "STU0001246659": { name: "Diya Detroja", batch: "CAT 2705" },
-  "STU0001246646": { name: "Mahi Patel", batch: "CAT 2705" },
-  "STU0001242598": { name: "Kevin Patel", batch: "CAT 2705" },
-  // CAT 2706
-  "STU0001247174": { name: "Harsh Soni", batch: "CAT 2706" },
-  "STU0001247175": { name: "Kalp Patel", batch: "CAT 2706" },
   "STU0001226320": { name: "Anmol Mishra", batch: "CAT 2706" },
+  "STU0001224643": { name: "Devansh Agrawal", batch: "CAT 2706" },
+  "STU0001244109": { name: "Devanshi Padariya", batch: "CAT 2706" },
+  "STU0001257394": { name: "Dhruvesh Tanna", batch: "CAT 2706" },
+  "STU0001247174": { name: "Harsh Soni", batch: "CAT 2706" },
   "STU0001235308": { name: "Jhanvi Shah", batch: "CAT 2706" },
   "STU0001231078": { name: "Jiya Barot", batch: "CAT 2706" },
+  "STU0001247175": { name: "Kalp Patel", batch: "CAT 2706" },
   "STU0001233355": { name: "Khushi Marathe", batch: "CAT 2706" },
   "STU0001190011": { name: "Kush Singh", batch: "CAT 2706" },
+  "STU0001243953": { name: "Madhvi Vekariya", batch: "CAT 2706" },
+  "STU0001247163": { name: "Manav Shah", batch: "CAT 2706" },
+  "STU0001250750": { name: "Mokshaa Shah", batch: "CAT 2706" },
+  "STU0001238527": { name: "Nidhi Katariya", batch: "CAT 2706" },
   "STU0001227835": { name: "Pal Karia", batch: "CAT 2706" },
   "STU0001166029": { name: "Pal Maheshwari", batch: "CAT 2706" },
   "STU0001178786": { name: "Paras Prajapat", batch: "CAT 2706" },
   "STU0001227273": { name: "Parth Srivastava", batch: "CAT 2706" },
-  "STU0001226828": { name: "Prithvi Kalariya", batch: "CAT 2706" },
-  "STU0001211383": { name: "Utsav Kotecha", batch: "CAT 2706" },
-  "STU0001234826": { name: "Vihaan Patel", batch: "CAT 2706" },
-  "STU0001224643": { name: "Devansh Agrawal", batch: "CAT 2706" },
-  "STU0001244109": { name: "Devanshi Padariya", batch: "CAT 2706" },
-  "STU0001243953": { name: "Madhvi Vekariya", batch: "CAT 2706" },
-  "STU0001238527": { name: "Nidhi Katariya", batch: "CAT 2706" },
   "STU0001240276": { name: "Prasanna Satikuvar", batch: "CAT 2706" },
+  "STU0001226828": { name: "Prithvi Kalariya", batch: "CAT 2706" },
   "STU0001244110": { name: "Sangini Bhalodi", batch: "CAT 2706" },
   "STU0001246051": { name: "Shivam Patel", batch: "CAT 2706" },
-  // CAT 2707
+  "IMS0001118670": { name: "Tanish Sharma", batch: "CAT 2706" },
+  "STU0001211383": { name: "Utsav Kotecha", batch: "CAT 2706" },
+  "STU0001256602": { name: "Vaishali Gidwani", batch: "CAT 2706" },
+  "STU0001234826": { name: "Vihaan Patel", batch: "CAT 2706" },
+  "STU0001249492": { name: "Yash Patel", batch: "CAT 2706" },
+  "IMS0001107884": { name: "Aastha Vardiwale", batch: "CAT 2707" },
   "STU0001246550": { name: "Aditya Lalwani", batch: "CAT 2707" },
-  "STU0001248811": { name: "Kavya Bhatt", batch: "CAT 2707" },
+  "STU0001253566": { name: "Anushri Paliwal", batch: "CAT 2707" },
+  "IMS0001088075": { name: "Archik Mehta", batch: "CAT 2707" },
+  "STU0001242863": { name: "Arman Pinjara", batch: "CAT 2707" },
   "STU0001237262": { name: "Bhavika Vadher", batch: "CAT 2707" },
-  "STU0001232272": { name: "Netra Chavda", batch: "CAT 2707" },
+  "STU0001246579": { name: "Dax Patel", batch: "CAT 2707" },
   "STU0001236117": { name: "Dhruv Jain", batch: "CAT 2707" },
+  "STU0001238779": { name: "Helly Patel", batch: "CAT 2707" },
+  "STU0001234602": { name: "Jaival Chachcha", batch: "CAT 2707" },
+  "STU0001237393": { name: "Jaival Oza", batch: "CAT 2707" },
+  "STU0001248811": { name: "Kavya Bhatt", batch: "CAT 2707" },
+  "STU0001243394": { name: "Khushi Sharma", batch: "CAT 2707" },
+  "STU0001240352": { name: "Lekha Panchal", batch: "CAT 2707" },
+  "STU0001246280": { name: "Manav Patel", batch: "CAT 2707" },
+  "STU0001232272": { name: "Netra Chavda", batch: "CAT 2707" },
   "STU0001217647": { name: "Nirvairsingh Khera", batch: "CAT 2707" },
+  "STU0001246902": { name: "Nisarg Patel", batch: "CAT 2707" },
+  "STU0001248214": { name: "Palak Satasiya", batch: "CAT 2707" },
+  "STU0001194377": { name: "Srishti Gupta", batch: "CAT 2707" },
+  "STU0001248204": { name: "Tirth Makwana", batch: "CAT 2707" },
+  "STU0001232502": { name: "Ved Bhatt", batch: "CAT 2707" }
 };
- 
+
+
 // Time slot logic
 function getTimeSlot(batch) {
   const num = parseInt(batch.replace("CAT 270", "").replace("CAT 27", ""));
@@ -794,11 +819,11 @@ function getTimeSlot(batch) {
   if (num >= 4 && num <= 8) return "3:45 PM – 5:45 PM";
   return "TBD";
 }
- 
+
 // State
 let verifiedStudent = null;
 let committed = false;
- 
+
 // Build a batch → sorted students index
 const BATCH_INDEX = {};
 for (const [pin, data] of Object.entries(STUDENTS)) {
@@ -809,12 +834,12 @@ for (const [pin, data] of Object.entries(STUDENTS)) {
 for (const b of Object.keys(BATCH_INDEX)) {
   BATCH_INDEX[b].sort((a, b) => a.name.localeCompare(b.name));
 }
- 
+
 function onBatchChange() {
   const batch = document.getElementById('batchSelect').value;
   const nameSelect = document.getElementById('nameSelect');
   const preview = document.getElementById('studentPreview');
- 
+
   // Reset downstream
   nameSelect.innerHTML = '';
   preview.classList.remove('visible');
@@ -822,13 +847,13 @@ function onBatchChange() {
   committed = false;
   document.getElementById('commitmentBox').classList.remove('checked');
   updateSubmitBtn();
- 
+
   if (!batch) {
     nameSelect.innerHTML = '<option value="">— Select your batch first —</option>';
     nameSelect.disabled = true;
     return;
   }
- 
+
   nameSelect.disabled = false;
   const students = BATCH_INDEX[batch] || [];
   nameSelect.innerHTML = '<option value="">— Select your name —</option>';
@@ -839,19 +864,19 @@ function onBatchChange() {
     nameSelect.appendChild(opt);
   });
 }
- 
+
 function onNameChange() {
   const pin = document.getElementById('nameSelect').value;
   const preview = document.getElementById('studentPreview');
- 
+
   preview.classList.remove('visible');
   verifiedStudent = null;
   committed = false;
   document.getElementById('commitmentBox').classList.remove('checked');
   updateSubmitBtn();
- 
+
   if (!pin || !STUDENTS[pin]) return;
- 
+
   const student = STUDENTS[pin];
   verifiedStudent = { pin, ...student };
   document.getElementById('previewName').textContent = student.name;
@@ -859,23 +884,23 @@ function onNameChange() {
   preview.classList.add('visible');
   updateSubmitBtn();
 }
- 
+
 function toggleCommitment() {
   committed = !committed;
   document.getElementById('commitmentBox').classList.toggle('checked', committed);
   updateSubmitBtn();
 }
- 
+
 function updateSubmitBtn() {
   document.getElementById('submitBtn').disabled = !(verifiedStudent && committed);
 }
- 
+
 // GOOGLE APPS SCRIPT URL — replace this with your deployed Web App URL
 const GAS_URL = "https://script.google.com/macros/s/AKfycbwjFxCC-0mIosUpKy1FXraJEU1NjXdEoMy8bxt3byxw0zFHvDX7_JlMWGX3559To1q7Hg/exec";
- 
+
 async function handleSubmit() {
   if (!verifiedStudent || !committed) return;
- 
+
   // Show loading
   const btn = document.getElementById('submitBtn');
   const spinner = document.getElementById('spinner');
@@ -883,7 +908,7 @@ async function handleSubmit() {
   btn.disabled = true;
   spinner.style.display = 'block';
   btnText.textContent = 'Registering…';
- 
+
   const payload = {
     imsPin: verifiedStudent.pin,
     name: verifiedStudent.name,
@@ -891,7 +916,7 @@ async function handleSubmit() {
     timeSlot: getTimeSlot(verifiedStudent.batch),
     timestamp: new Date().toISOString()
   };
- 
+
   try {
     await fetch(GAS_URL, {
       method: "POST",
@@ -902,7 +927,7 @@ async function handleSubmit() {
   } catch (e) {
     // no-cors won't throw; proceed to confirmation either way
   }
- 
+
   // Show confirmation
   document.getElementById('formView').style.display = 'none';
   document.getElementById('confName').textContent = verifiedStudent.name;
@@ -913,4 +938,3 @@ async function handleSubmit() {
 </script>
 </body>
 </html>
- 
